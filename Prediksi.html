@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="prediksi.css">
+    <link rel="icon" type="image/x-icon" href="icons/chili.ico">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="app-title-container">
+            <h1 class="app-title">APLIKASI CABAI</h1>
+            <div class="separator-line"></div>
+        </div>
+
+        <a href="index.html">
+            <img src="Icons/Home-icon.png" alt="Icon Home" class="nav-icon">
+            <span>Home</span>
+        </a>
+
+        <a href="Monitoring.html">
+            <img src="Icons/Monitoring-icon.png" alt="Icon Monitoring" class="nav-icon">
+            <span>Monitoring</span>
+        </a>
+
+        <a href="Prediksi.html">
+            <img src="Icons/Image-icon.png" alt="Icon Prediction" class="nav-icon">
+            <span>Prediction</span>
+        </a>
+    </div>
+
+    <div class="content">
+        <div class="prediction-history">
+            <h1>Riwayat Prediksi Penyakit</h1>
+            <div id="history-container" class="history-grid">
+                </div>
+        </div>
+    </div>
+
+    <div id="image-modal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="full-image">
+    </div>
+
+    <script type="module" src="prediksi.js"></script>
+</body>
+</html>

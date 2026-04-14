@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring</title>
+    <link rel="icon" type="image/x-icon" href="icons/chili.ico"> 
+    <link rel="stylesheet" href="monitoring.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="app-title-container">
+            <h1 class="app-title">APLIKASI CABAI</h1>
+            <div class="separator-line"></div>
+        </div>
+
+        <a href="index.html">
+            <img src="Icons/Home-icon.png" alt="Icon Home" class="nav-icon">
+            <span>Home</span>
+        </a>
+
+        <a href="Monitoring.html">
+            <img src="Icons/Monitoring-icon.png" alt="Icon Monitoring" class="nav-icon">
+            <span>Monitoring</span>
+        </a>
+
+        <a href="Prediksi.html">
+            <img src="Icons/Image-icon.png" alt="Icon Prediction" class="nav-icon">
+            <span>Prediction</span>
+        </a>
+    </div>
+
+    <div class="content" id="monitoring">
+        <h1>Dashboard Monitoring</h1>
+
+        <div class="chart-container">
+            <canvas id="sensorChart"></canvas>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <img src="icons/suhu.png" alt="Icon Suhu" class="dashboard-icon"> 
+                <h2>Temperature</h2>
+                <p class="value" id="suhu-value">--°C</p>
+            </div>
+            <div class="card">
+                <img src="icons/kelembaban udara.png" alt="Icon kelembaban udara" class="dashboard-icon"> 
+                <h2>Air Humidity</h2>
+                <p class="value" id="kelembaban-udara-value">--%</p>
+            </div>
+            <div class="card">
+                <img src="icons/kelembaban tanah.png" alt="Icon kelembaban tanah" class="dashboard-icon"> 
+                <h2>Soil Moisture</h2>
+                <p class="value" id="kelembaban-tanah-value">--%</p>
+            </div>
+            <div class="card">
+                <img src="icons/status (1).png" alt="Icon status" class="dashboard-icon"> 
+                <h2>Soil Conditions</h2>
+                <p class="value" id="status-tanah-value">----</p>
+            </div>
+        </div>
+
+            <h1 style="margin-top: 50px;">Weekly Monitoring</h1>
+
+            <div class="chart-container">
+                <canvas id="weeklyTempChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="weeklyHumChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="weeklySoilChart"></canvas>
+            </div>
+
+    <h1>Data History</h1>
+        <div class="table-container">
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Temperature (°C)</th>
+                        <th>Air Humidity (%)</th>
+                        <th>Soil Moisture (%)</th>
+                        <th>Soil Conditions</th>
+                        <th>Time</th>
+                        <th>Action</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>

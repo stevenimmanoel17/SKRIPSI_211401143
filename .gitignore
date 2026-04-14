@@ -1,0 +1,4 @@
+venv/ 
+*.dll 
+*.exe 
+variables.data-00000-of-00001 

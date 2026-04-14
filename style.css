@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #E0E0E0;
+}
+
+.navbar {
+    background-color: #006400; 
+    overflow-y: outo;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+    position: fixed;
+    height: 100vh;   
+    top: 0;          
+    left: 0;         
+    z-index: 1000;   
+}
+
+.app-title-container {
+    text-align: center;
+    width: 100%; 
+    padding: 10px 0; 
+    margin-bottom: 20px;
+}
+
+.app-title {
+    color: white;
+    font-family: 'Verdana', sans-serif;
+    font-weight: 100;
+    font-size: 1.05em; 
+    margin: 0; 
+    padding: 0 10px; 
+}
+
+.separator-line {
+    width: 80%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 25px auto 0 auto;
+    border-radius: 1px;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+.navbar a:last-child {
+    margin-bottom: 0;
+}
+
+.navbar a:hover {
+    background-color: #004d00;
+    color: white;
+}
+
+.navbar .nav-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.navbar a span {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-left: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 20px); 
+}
+
+.home-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    max-width: 400px; 
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.home-card .card-title {
+    font-family: 'Overpass', sans-serif; 
+    font-weight: 700; 
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.home-card .usu-logo {
+    max-width: 250px; 
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.home-card .card-degree,
+.home-card .card-name,
+.home-card .card-nim {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0; 
+}
+
+.home-card .card-name {
+    font-weight: 700;
+    color: #333;
+}
+
+#home.content {
+    padding-top: 20px;
+}
+
+#home, #monitoring, #prediksi {
+    scroll-margin-top: 20px;
+}
